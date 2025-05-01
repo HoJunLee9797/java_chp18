@@ -1,6 +1,7 @@
 package kh.consumer;
 
 import java.util.function.Consumer;
+import java.util.function.IntConsumer;
 
 public class ConsumerMain {
 
@@ -14,7 +15,7 @@ public class ConsumerMain {
 		 */
 		System.out.println("=======================");
 		Consumer<Integer>mt =  t -> {
-			
+			System.out.printf("%d 단 출력\n",t);
 			for(int i =0;i < 10;i++) {
 				System.out.printf("%d * % d = %d\n",t ,i ,t*i);
 			
@@ -40,6 +41,13 @@ public class ConsumerMain {
 		mt.accept(8);
 		T.sleep(1000);
 		mt.accept(9);
+		
+		//=====================================
+		IntConsumer icon =  t-> {
+				
+			
+		};
+		icon.accept(7);
 		System.out.println("The end");
 	}
 }

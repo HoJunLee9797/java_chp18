@@ -15,3 +15,12 @@ interface B{
 	int methodB();
 
 }
+
+
+interface C {
+	//입력 있고, 리턴 없다.
+	void methodC(int p);
+	
+	
+	
+}
